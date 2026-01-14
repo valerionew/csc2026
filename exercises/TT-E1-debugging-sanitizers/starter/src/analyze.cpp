@@ -25,6 +25,7 @@ int main() {
     const tt_e1::Track* best = reco.getBestTrack();
     std::cout << "Best track pT: " << best->pt << std::endl;
 
+    delete best;   // freed here
     return 0;
 }
 
