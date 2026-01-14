@@ -37,7 +37,7 @@ std::vector<Track> TrackReconstructor::reconstruct() {
 // BUG 3: Use-After-Free
 // Return a pointer to memory that has already been freed.
 const Track TrackReconstructor::getBestTrack() const {
-    auto* best = new Track{};
+
     Track best;
     best.pt = 100.0;
     best.hits = m_hits;

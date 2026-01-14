@@ -37,7 +37,7 @@ public:
     std::vector<Track> reconstruct();
 
     // Intentionally buggy: returns pointer to freed memory (use-after-free)
-    const Track* getBestTrack() const;
+    const Track getBestTrack() const;
 
 private:
     double m_minPt{0.0};
