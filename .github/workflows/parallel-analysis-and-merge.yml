@@ -1,4 +1,4 @@
-name: Process ATLAS ROOT Open Data v2
+name: Process ATLAS ROOT Open Data (SILAFAE 2024)
 
 on:
   workflow_dispatch:
@@ -8,16 +8,16 @@ on:
         default: "exercises/TT-E2-docs-and-ci/ci-parallel-root/data.csv"
         required: true
 
-  schedule:
-    - cron: "0 */10 * * *" # every 10 hours (UTC)
+#  schedule:
+#    - cron: "0 */10 * * *" # every 10 hours (UTC)
 
   push:
     branches: [main]
     paths:
       - "exercises/TT-E2-docs-and-ci/ci-parallel-root/data.csv"
       - "exercises/TT-E2-docs-and-ci/ci-parallel-root/mc.csv"
-      - "exercises/TT-E2-docs-and-ci/ci-parallel-root/gamma-gamma-analysis-v1.py"
-      - "exercises/TT-E2-docs-and-ci/ci-parallel-root/root-to-png.py"
+#      - "exercises/TT-E2-docs-and-ci/ci-parallel-root/gamma-gamma-analysis-v1.py"
+#      - "exercises/TT-E2-docs-and-ci/ci-parallel-root/root-to-png.py"
 
 permissions:
   contents: write
